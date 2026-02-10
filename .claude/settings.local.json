@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ridewithgps.com)",
+      "WebFetch(domain:bikepacking.com)",
+      "WebFetch(domain:www.komoot.com)",
+      "WebFetch(domain:balkanyrudej.pl)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
+    ]
+  }
+}
