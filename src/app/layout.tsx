@@ -12,15 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const OG_IMAGE =
+  "https://d2exd72xrrp1s7.cloudfront.net/www/1e/1egfo8mnlin0knrtbr51tka53v9aq0pc-p175678407-full/17b2ad11817?width=1200&crop=false&q=70";
+
 export const metadata: Metadata = {
-  title: "Let's Go Slovenia! | West Loop Bikepacking Adventure",
+  title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
   description:
-    "Join us for a 2-week bikepacking adventure through Slovenia's stunning West Loop — emerald rivers, Julian Alps, medieval towns, and world-class gravel riding.",
+    "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast. Late May 2026.",
   openGraph: {
-    title: "Let's Go Slovenia! | West Loop Bikepacking Adventure",
+    title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
     description:
-      "2 weeks. 530 km. Julian Alps, Soča Valley, Lake Bled, and more. Late May 2026.",
+      "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast. Late May 2026.",
     type: "website",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Bikepacking through Slovenia" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
+    description:
+      "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast.",
+    images: [OG_IMAGE],
   },
 };
 
