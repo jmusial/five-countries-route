@@ -20,19 +20,21 @@ const HIGHLIGHTS = [
     title: "Vr\u0161i\u010D Pass & Julian Alps",
     desc: "Slovenia\u2019s highest road pass at 1,611m \u2014 50 hairpin turns of cobbled WWI-era road. The Russian Chapel, limestone spires, and the epic descent into the So\u010Da Valley.",
     color: "from-slate-600 to-blue-800",
-    image: 'https://bikepacking.com/wp-content/uploads/2015/08/bikepacking-slovenia-14.jpg',
+    image: 'https://sloveniacyclingholidays.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F23422%2FThe-switchbacks-of-Vrsic-Pass-scaled.webp&w=3840&q=75',
     icon: "\u26F0\uFE0F",
   },
   {
     title: "So\u010Da Valley",
     desc: "Follow the emerald So\u010Da River through gorges, past WWI sites at Kobarid, and alongside turquoise swimming holes. The water colour has to be seen to be believed.",
     color: "from-teal-500 to-cyan-700",
+    image: "https://exploreslovenia.si/wp-content/uploads/2021/05/Explore_Slovenia_Soca-Valley-MTB-Tour_mainphoto_299.jpg",
     icon: "\uD83C\uDF0A",
   },
   {
     title: "Trieste",
     desc: "A detour into Italy\u2019s coffee capital. Habsburg architecture, world-class seafood, and the Adriatic waterfront. The perfect rest-day city between mountains and coast.",
     color: "from-amber-600 to-red-700",
+    image: 'https://lp-cms-production.imgix.net/2019-06/a3cb50844fe6b51b20a1338218152b61-borgo-teresiano.jpg?sharp=10&vib=20&w=1200&w=600&h=400',
     icon: "\u2615",
   },
   {
@@ -40,18 +42,21 @@ const HIGHLIGHTS = [
     desc: "A converted narrow-gauge railway from the Austro-Hungarian era. Car-free gravel through tunnels, over viaducts, and along the Istrian hills \u2014 one of Europe\u2019s best rail trails.",
     color: "from-stone-500 to-stone-700",
     icon: "\uD83D\uDEE4\uFE0F",
+    image: 'https://www.eurotours-villas.com/uploads/imgcache/article-main/articles/1748264871_1629.jpg',
   },
   {
     title: "Slovenian & Croatian Coast",
     desc: "Venetian towns of Piran and Koper, salt pans at Se\u010Dovlje, then the EV8 EuroVelo route along the Adriatic into Croatia. Swim stops guaranteed.",
     color: "from-sky-500 to-blue-700",
     icon: "\uD83C\uDFD6\uFE0F",
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QcLG-OuW_avoiz7hTW5l8gJqMWoKIvW6gQ&s',
   },
   {
     title: "Rijeka",
     desc: "Finish in Croatia\u2019s gritty port city \u2014 2020 European Capital of Culture. Harbour-side bars, the Korzo promenade, and the satisfaction of having pedalled across three countries.",
     color: "from-orange-600 to-rose-700",
     icon: "\uD83C\uDFC1",
+    image: 'https://www.thetimes.com/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F094146a2-224b-11ea-81b4-b78674dd3224.jpg?crop=2667%2C1500%2C0%2C0'
   },
 ];
 
@@ -333,13 +338,12 @@ export default function Home() {
                 key={i}
                 className="fade-section group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
               >
-                <div
-                  className={`h-48 bg-gradient-to-br ${h.color} flex items-center justify-center`}
-                >
-                  <span className="text-6xl opacity-80 group-hover:scale-110 transition-transform duration-300">
-                    {h.icon}
-                  </span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={h.image}
+                  alt={h.title}
+                  className="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
                 <div className="p-6 bg-white">
                   <h3 className="text-xl font-bold mb-2">{h.title}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
