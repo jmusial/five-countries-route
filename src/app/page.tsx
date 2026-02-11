@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import { Accordion } from "./accordion";
+import { Carousel } from "./carousel";
 
 const RWGPS_EMBED =
   "https://ridewithgps.com/embeds?type=route&id=53945831&privacy_code=I7MD2VPfqaEuqrhEyPue9ZchCgi69Ys7&metricUnits=true&sampleGraph=true";
@@ -20,21 +22,24 @@ const HIGHLIGHTS = [
     title: "Vr\u0161i\u010D Pass & Julian Alps",
     desc: "Slovenia\u2019s highest road pass at 1,611m \u2014 50 hairpin turns of cobbled WWI-era road. The Russian Chapel, limestone spires, and the epic descent into the So\u010Da Valley.",
     color: "from-slate-600 to-blue-800",
-    image: 'https://sloveniacyclingholidays.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F23422%2FThe-switchbacks-of-Vrsic-Pass-scaled.webp&w=3840&q=75',
+    image:
+      "https://sloveniacyclingholidays.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F23422%2FThe-switchbacks-of-Vrsic-Pass-scaled.webp&w=3840&q=75",
     icon: "\u26F0\uFE0F",
   },
   {
     title: "So\u010Da Valley",
     desc: "Follow the emerald So\u010Da River through gorges, past WWI sites at Kobarid, and alongside turquoise swimming holes. The water colour has to be seen to be believed.",
     color: "from-teal-500 to-cyan-700",
-    image: "https://exploreslovenia.si/wp-content/uploads/2021/05/Explore_Slovenia_Soca-Valley-MTB-Tour_mainphoto_299.jpg",
+    image:
+      "https://exploreslovenia.si/wp-content/uploads/2021/05/Explore_Slovenia_Soca-Valley-MTB-Tour_mainphoto_299.jpg",
     icon: "\uD83C\uDF0A",
   },
   {
     title: "Trieste",
     desc: "A detour into Italy\u2019s coffee capital. Habsburg architecture, world-class seafood, and the Adriatic waterfront. The perfect rest-day city between mountains and coast.",
     color: "from-amber-600 to-red-700",
-    image: 'https://lp-cms-production.imgix.net/2019-06/a3cb50844fe6b51b20a1338218152b61-borgo-teresiano.jpg?sharp=10&vib=20&w=1200&w=600&h=400',
+    image:
+      "https://lp-cms-production.imgix.net/2019-06/a3cb50844fe6b51b20a1338218152b61-borgo-teresiano.jpg?sharp=10&vib=20&w=1200&w=600&h=400",
     icon: "\u2615",
   },
   {
@@ -42,21 +47,24 @@ const HIGHLIGHTS = [
     desc: "A converted narrow-gauge railway from the Austro-Hungarian era. Car-free gravel through tunnels, over viaducts, and along the Istrian hills \u2014 one of Europe\u2019s best rail trails.",
     color: "from-stone-500 to-stone-700",
     icon: "\uD83D\uDEE4\uFE0F",
-    image: 'https://www.eurotours-villas.com/uploads/imgcache/article-main/articles/1748264871_1629.jpg',
+    image:
+      "https://www.eurotours-villas.com/uploads/imgcache/article-main/articles/1748264871_1629.jpg",
   },
   {
     title: "Slovenian & Croatian Coast",
     desc: "Venetian towns of Piran and Koper, salt pans at Se\u010Dovlje, then the EV8 EuroVelo route along the Adriatic into Croatia. Swim stops guaranteed.",
     color: "from-sky-500 to-blue-700",
     icon: "\uD83C\uDFD6\uFE0F",
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QcLG-OuW_avoiz7hTW5l8gJqMWoKIvW6gQ&s',
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QcLG-OuW_avoiz7hTW5l8gJqMWoKIvW6gQ&s",
   },
   {
     title: "Rijeka",
     desc: "Finish in Croatia\u2019s gritty port city \u2014 2020 European Capital of Culture. Harbour-side bars, the Korzo promenade, and the satisfaction of having pedalled across three countries.",
     color: "from-orange-600 to-rose-700",
     icon: "\uD83C\uDFC1",
-    image: 'https://www.thetimes.com/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F094146a2-224b-11ea-81b4-b78674dd3224.jpg?crop=2667%2C1500%2C0%2C0'
+    image:
+      "https://www.thetimes.com/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F094146a2-224b-11ea-81b4-b78674dd3224.jpg?crop=2667%2C1500%2C0%2C0",
   },
 ];
 
@@ -190,6 +198,39 @@ const ITINERARY = [
   },
 ];
 
+const CAROUSEL_IMAGES = [
+  {
+    image:
+      "https://d2exd72xrrp1s7.cloudfront.net/www/28/2827znoehw4s11h9dhiema1353v9aecob-p175675252-full/17b2ac8c940?width=3360&crop=false&q=70",
+  },
+  {
+    image:
+      "https://d2exd72xrrp1s7.cloudfront.net/www/1l/1l6cpqjv3grzqq24rg52we8kx3v9adfih-p175675232-full/17b2ac82100?width=3360&crop=false&q=70",
+  },
+  {
+    image:
+      "https://d2exd72xrrp1s7.cloudfront.net/www/1p/1pr0jf9czl9vhbowmw3a2zkkd3v9b8dxs-p175685147-full/17b2ade2b0a?width=3360&crop=false&q=70",
+  },
+  {
+    image:
+      "https://d2exd72xrrp1s7.cloudfront.net/www/g8/g8nf8qurzche1v25xxubqoeb43v9a0gb4-p175671324-full/17b2abee3c2?width=1680&crop=false&q=80",
+  },
+  {
+    image:
+      "https://cyclingholidayscroatia.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F43309%2FParenzana_high-res_vertical-44.jpg&w=3840&q=75",
+  },
+  {
+    image:
+      "https://www.thenaturaladventure.com/wp-content/uploads/2022/11/cycling-the-parenzana-trail-2.jpg",
+  },
+  {
+    image: "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9142.jpg",
+  },
+  {
+    image: "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9110.jpg",
+  },
+];
+
 /* ────────────── component ────────────── */
 
 export default function Home() {
@@ -202,7 +243,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     document.querySelectorAll(".fade-section").forEach((el) => {
@@ -215,7 +256,13 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* ══════ HERO ══════ */}
-      <section className="hero-section relative flex items-end min-h-screen" style={{ backgroundImage: "url('https://d2exd72xrrp1s7.cloudfront.net/www/1e/1egfo8mnlin0knrtbr51tka53v9aq0pc-p175678407-full/17b2ad11817?width=3360&crop=false&q=70')" }}>
+      <section
+        className="hero-section relative flex items-end min-h-screen"
+        style={{
+          backgroundImage:
+            "url('https://d2exd72xrrp1s7.cloudfront.net/www/1e/1egfo8mnlin0knrtbr51tka53v9aq0pc-p175678407-full/17b2ad11817?width=3360&crop=false&q=70')",
+        }}
+      >
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-black/10" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 pb-16 md:pb-24 w-full">
@@ -228,10 +275,10 @@ export default function Home() {
             <span className="text-emerald-400">Slovenia</span>
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
-            A 2-week ride from Ljubljana to Rijeka &mdash; Julian Alps,
-            emerald So&#x10D;a Valley, Trieste, the Parenzana rail trail,
-            and the Adriatic coast. Three countries, ~550&nbsp;km, one
-            unforgettable trip.
+            A 2-week ride from Ljubljana to Rijeka &mdash; Julian Alps, emerald
+            So&#x10D;a Valley, Trieste, the Parenzana rail trail, and the
+            Adriatic coast. Three countries, ~550&nbsp;km, one unforgettable
+            trip.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -280,25 +327,28 @@ export default function Home() {
           <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             Three countries, zero backtracking. Start in Ljubljana, cross the
             Julian Alps over the legendary Vr&scaron;i&#x10D; Pass, follow the
-            emerald So&#x10D;a River to the sea, detour into Trieste for
-            Italian coffee and seafood, then ride the Parenzana rail trail and
-            EV8 coast through Slovenia and Croatia to Rijeka. The mix of alpine
-            gravel, historic trails, and coastal cycling is hard to beat
-            anywhere in Europe &mdash; and late May means warm days, long light,
-            and passes freshly open.
+            emerald So&#x10D;a River to the sea, detour into Trieste for Italian
+            coffee and seafood, then ride the Parenzana rail trail and EV8 coast
+            through Slovenia and Croatia to Rijeka. The mix of alpine gravel,
+            historic trails, and coastal cycling is hard to beat anywhere in
+            Europe &mdash; and late May means warm days, long light, and passes
+            freshly open.
           </p>
         </div>
       </section>
 
       {/* ══════ ROUTE MAP EMBED ══════ */}
-      <section id="route" className="fade-section bg-stone-100 py-20 md:py-28 px-6">
+      <section
+        id="route"
+        className="fade-section bg-stone-100 py-20 md:py-28 px-6"
+      >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
             The Route
           </h2>
           <p className="text-gray-500 text-center text-lg mb-10 max-w-2xl mx-auto">
-            Ljubljana to Rijeka across three countries. Interactive map
-            with elevation profile &mdash; zoom in, click around.
+            Ljubljana to Rijeka across three countries. Interactive map with
+            elevation profile &mdash; zoom in, click around.
           </p>
           <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
             <iframe
@@ -356,8 +406,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ══════ CAROUSEL ══════ */}
+      <section className="fade-section">
+        <Carousel images={CAROUSEL_IMAGES} />
+      </section>
+
       {/* ══════ ITINERARY ══════ */}
-      <section id="itinerary" className="bg-stone-100 py-20 md:py-28 px-4 md:px-6">
+      <section
+        id="itinerary"
+        className="bg-stone-100 py-20 md:py-28 px-4 md:px-6"
+      >
         <div className="max-w-5xl mx-auto">
           <h2 className="fade-section text-3xl md:text-5xl font-bold text-center mb-4">
             14-Day Itinerary
@@ -383,9 +441,7 @@ export default function Home() {
                 {/* Card */}
                 <div
                   className={`ml-12 md:ml-0 w-[calc(100%-3rem)] md:w-full ${
-                    i % 2 === 0
-                      ? "md:mr-[52%] md:pr-8"
-                      : "md:ml-[52%] md:pl-8"
+                    i % 2 === 0 ? "md:mr-[52%] md:pr-8" : "md:ml-[52%] md:pl-8"
                   }`}
                 >
                   <div className="bg-white rounded-xl p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -511,6 +567,56 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ══════ ALTERNATIVE VARIANTS ══════ */}
+      <section className="fade-section bg-stone-100 py-20 md:py-28 px-4 md:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+            Alternative Variants
+          </h2>
+          <div className="flex flex-col gap-4">
+            <Accordion title="Variant 2 - 440km - 8k up/down">
+              <iframe
+                src="https://ridewithgps.com/embeds?type=route&id=53947958&privacy_code=7wZMZEJJkh5CeTPhTUzDdWOjvAVKcAWd&metricUnits=true&sampleGraph=true"
+                style={{
+                  width: "1px",
+                  minWidth: "100%",
+                  height: "700px",
+                  border: "none",
+                }}
+                scrolling="no"
+                title="Variant 3 route on RideWithGPS"
+              />
+            </Accordion>
+            <Accordion title="Variant 3 - 540km - 8k up/down">
+              <iframe
+                src="https://ridewithgps.com/routes/53947982"
+                style={{
+                  width: "1px",
+                  minWidth: "100%",
+                  height: "700px",
+                  border: "none",
+                }}
+                scrolling="no"
+                title="Variant 3 route on RideWithGPS"
+              />
+            </Accordion>
+            <Accordion title="Variant 4 - 380km - 6k up/down">
+              <iframe
+                src="https://ridewithgps.com/routes/53947893"
+                style={{
+                  width: "1px",
+                  minWidth: "100%",
+                  height: "700px",
+                  border: "none",
+                }}
+                scrolling="no"
+                title="Variant 3 route on RideWithGPS"
+              />
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
       {/* ══════ FOOTER ══════ */}
       <footer className="bg-gray-900 text-white/60 py-12 px-6">
         <div className="max-w-5xl mx-auto text-center text-sm space-y-4">
@@ -527,7 +633,7 @@ export default function Home() {
             .
           </p>
           <p>
-            Picures borrowed from {" "}
+            Picures borrowed from{" "}
             <a
               href="https://www.komoot.com/collection/1347997/bikepacking-auf-dem-slovenia-west-loop-soca-variante"
               target="_blank"
