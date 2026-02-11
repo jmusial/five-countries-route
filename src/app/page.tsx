@@ -224,10 +224,32 @@ const CAROUSEL_IMAGES = [
       "https://www.thenaturaladventure.com/wp-content/uploads/2022/11/cycling-the-parenzana-trail-2.jpg",
   },
   {
-    image: "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9142.jpg",
+    image:
+      "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9142.jpg",
   },
   {
-    image: "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9110.jpg",
+    image:
+      "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9110.jpg",
+  },
+];
+
+const REFERENCES = [
+  {
+    url: "https://www.komoot.com/collection/1347997/bikepacking-auf-dem-slovenia-west-loop-soca-variante",
+    title: "Slovenia West Loop (Soča Variation) – Bikepacking - Komoot",
+  },
+  {
+    url: "https://www.twowheeledwanderer.com/posts/slovenia-west-loop-bikepacking/",
+    title:
+      "Bikepacking the Slovenia West Loop: My Route, Highlights & Lessons Learned",
+  },
+  {
+    url: "https://bikepacking.com/routes/bikepacking-slovenia/",
+    title: "Bikepacking Slovenia: The West Loop",
+  },
+  {
+    url: "https://www.rollingexistence.com/routes/cycling-the-parenzana-trail/",
+    title: "Cycling the Parenzana Trail",
   },
 ];
 
@@ -614,6 +636,30 @@ export default function Home() {
               />
             </Accordion>
           </div>
+        </div>
+      </section>
+
+      {/* ══════ REFERENCES ══════ */}
+      <section className="fade-section py-16 md:py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+            References
+          </h2>
+          <ul className="space-y-3 text-gray-500 text-sm md:text-base max-w-2xl mx-auto">
+            {REFERENCES.map((ref, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="text-emerald-600 mt-0.5">&#x2022;</span>
+                <a
+                  href={ref.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-700 hover:underline"
+                >
+                  {ref.title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
