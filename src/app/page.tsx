@@ -487,7 +487,7 @@ export default function Home() {
                 title: "Bike Setup",
                 emoji: "\uD83D\uDEB2",
                 content:
-                  "Gravel bike with 38mm+ tires (hardtail MTB works too). Mostly gravel roads and doubletrack with some tarmac. 75% unpaved but 99% rideable.",
+                  "Gravel bike with 38mm+ tires (hardtail MTB works too). Mostly gravel roads and doubletrack with some tarmac. 80% paved.",
               },
               {
                 title: "Accommodation",
@@ -505,7 +505,7 @@ export default function Home() {
                 title: "Budget Estimate",
                 emoji: "\uD83D\uDCB0",
                 content:
-                  "Getting there ~\u20AC100\u2013200. Accommodation ~\u20AC700\u2013900 (shared rooms). Food ~\u20AC25\u201335/day. Total roughly \u20AC1,200\u20131,500 per person for 2 weeks.",
+                  "Getting there ~\u20AC100\u2013200 (trains through Vienna). Accommodation ~\u20AC700\u2013900. Food ~\u20AC25\u201335/day. Total roughly \u20AC1,200\u20131,500 per person for 2 weeks.",
               },
               {
                 title: "Food & Drink",
