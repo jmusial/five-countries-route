@@ -5,7 +5,10 @@ import { Accordion } from "./accordion";
 import { Carousel } from "./carousel";
 
 const RWGPS_EMBED =
-  "https://ridewithgps.com/embeds?type=route&id=53945831&privacy_code=I7MD2VPfqaEuqrhEyPue9ZchCgi69Ys7&metricUnits=true&sampleGraph=true";
+  "https://ridewithgps.com/embeds?type=route&id=54021550&privacy_code=I7MD2VPfqaEuqrhEyPue9ZchCgi69Ys7&metricUnits=true&sampleGraph=true";
+
+const RWGPS_COLLECTION_EMBED =
+  "https://ridewithgps.com/embeds?type=collection&collectionId=8649036&metricUnits=true&sampleGraph=true&distanceMarkers=true&defaultShowAll=true";
 
 /* ───────── route stats ───────── */
 const STATS = [
@@ -23,7 +26,7 @@ const HIGHLIGHTS = [
     desc: "Day 1 ends at the warm Klopeiner See \u2014 a gem of southern Austrian Carinthia. Ringed by villages and forest, it\u2019s one of the warmest natural lakes in the Alps. A perfect reward for the first day out of Villach.",
     color: "from-sky-500 to-blue-700",
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/28/2827znoehw4s11h9dhiema1353v9aecob-p175675252-full/17b2ac8c940?width=3360&crop=false&q=70",
+      "https://cyclingholidaysaustria.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F12967%2FBavarian-Lion-and-Lighthouse-Lindau-Germany.jpeg&w=828&q=85",
     icon: "\uD83C\uDF0A",
   },
   {
@@ -136,7 +139,8 @@ const ITINERARY = [
   {
     day: "Day 6",
     date: "31 May",
-    title: "Balatonszentgy\u00F6rgy \u2192 Keszthely \u2192 Si\u00F3fok \u2192 Sz\u00E9kesfeh\u00E9rv\u00E1r",
+    title:
+      "Balatonszentgy\u00F6rgy \u2192 Keszthely \u2192 Si\u00F3fok \u2192 Sz\u00E9kesfeh\u00E9rv\u00E1r",
     desc: "Long but flat. Ride the entire southern Balaton shore: Keszthely (Festetics Palace) then Si\u00F3fok, Hungary\u2019s lively summer resort capital. Leave the lake at Si\u00F3fok and push north through low Transdanubian hills to Sz\u00E9kesfeh\u00E9rv\u00E1r, the royal coronation city of medieval Hungary.",
     distance: "119 km \u2191 390 m",
     stay: "Sz\u00E9kesfeh\u00E9rv\u00E1r",
@@ -172,7 +176,8 @@ const ITINERARY = [
   {
     day: "Day 9",
     date: "4 Jun",
-    title: "Esztergom \u2192 Kom\u00E1rno \u2192 \u017Eitn\u00FD ostrov (Bod\u00EDky)",
+    title:
+      "Esztergom \u2192 Kom\u00E1rno \u2192 \u017Eitn\u00FD ostrov (Bod\u00EDky)",
     desc: "Flat Danube cycle paths all day. Cross into Slovakia at Kom\u00E1rno \u2014 a divided city where Hungarian Kom\u00E1rom and Slovak Kom\u00E1rno face each other across the river. Enter \u017Eitn\u00FD ostrov (Rye Island), the largest river island in Central Europe, woven with quiet cycling paths and orchards.",
     distance: "98 km \u2191 260 m",
     stay: "Bod\u00EDky / \u017Eitn\u00FD ostrov",
@@ -262,7 +267,7 @@ export default function Home() {
         className="hero-section relative flex items-end min-h-screen"
         style={{
           backgroundImage:
-            "url('https://d2exd72xrrp1s7.cloudfront.net/www/1e/1egfo8mnlin0knrtbr51tka53v9aq0pc-p175678407-full/17b2ad11817?width=3360&crop=false&q=70')",
+            "url('https://www.visitcarinthia.at/user_upload_ADMIN2019/_processed_/8/5/csm_040-17__c_FRANZGERDL_BKK_MTB__5985_a69c3285aa.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-black/10" />
@@ -272,9 +277,9 @@ export default function Home() {
             24 May &mdash; 6 June 2026
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] mb-6">
-            The Poor Man&apos;s
+            Five countries route
             <br />
-            <span className="text-emerald-400">Slovenia</span>
+            <span className="text-emerald-400">Mountains, lakes and a big ass river</span>
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
             Villach to Bratislava &mdash; Carinthian lakes, Slovenia&apos;s
@@ -327,16 +332,15 @@ export default function Home() {
             Why This Route?
           </h2>
           <p className="text-gray-500 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Five countries, zero backtracking, and nearly all the hard climbing
-            done in the first three days. Start in Austrian Carinthia, tackle
-            the forested Pohorje massif into Maribor, then cross baroque Croatia
-            at Varaždin and ride two glorious flat days along the entire
-            southern shore of Lake Balaton. Roll into Budapest for a rest day of
-            thermal baths and ruin bars, follow the dramatic Danube Bend north
-            past Esztergom&apos;s hilltop basilica, and finish through the
-            cycling paradise of Žitný ostrov (Rye Island) into Bratislava.
-            Late&nbsp;May means long days, warm weather, and lake season just
-            beginning.
+            Five countries, zero backtracking, and nearly all the climbing done
+            in the first three days. Start in Austrian Carinthia, tackle the
+            forested Pohorje massif into Maribor, then cross baroque Croatia at
+            Varaždin and ride two glorious flat days along the entire southern
+            shore of Lake Balaton. Roll into Budapest for a rest day of thermal
+            baths and ruin bars, follow the dramatic Danube Bend north past
+            Esztergom&apos;s hilltop basilica, and finish through the cycling
+            paradise of Žitný ostrov (Rye Island) into Bratislava. Late&nbsp;May
+            means long days, warm weather, and lake season just beginning.
           </p>
         </div>
       </section>
@@ -354,28 +358,52 @@ export default function Home() {
             Villach to Bratislava across five countries. Interactive map with
             elevation profile &mdash; zoom in, click around.
           </p>
-          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
-            <iframe
-              src={RWGPS_EMBED}
-              style={{
-                width: "1px",
-                minWidth: "100%",
-                height: "700px",
-                border: "none",
-              }}
-              title="The Poor Man's Slovenia route"
-            />
+          <div className="space-y-3">
+            <Accordion title="Full Route" defaultOpen>
+              <iframe
+                src={RWGPS_EMBED}
+                style={{
+                  width: "1px",
+                  minWidth: "100%",
+                  height: "700px",
+                  border: "none",
+                }}
+                title="The Poor Man's Slovenia route — full route"
+              />
+              <p className="text-center mt-4">
+                <a
+                  href="https://ridewithgps.com/routes/54021550"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-600 hover:underline text-sm"
+                >
+                  Open full route on RideWithGPS &rarr;
+                </a>
+              </p>
+            </Accordion>
+            <Accordion title="Day by Day">
+              <iframe
+                src={RWGPS_COLLECTION_EMBED}
+                style={{
+                  width: "1px",
+                  minWidth: "100%",
+                  height: "700px",
+                  border: "none",
+                }}
+                title="The Poor Man's Slovenia route — day by day"
+              />
+              <p className="text-center mt-4">
+                <a
+                  href="https://ridewithgps.com/collections/8649036"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-600 hover:underline text-sm"
+                >
+                  Open the collection on RideWithGPS &rarr;
+                </a>
+              </p>
+            </Accordion>
           </div>
-          <p className="text-center mt-4">
-            <a
-              href="https://ridewithgps.com/routes/53945831?privacy_code=I7MD2VPfqaEuqrhEyPue9ZchCgi69Ys7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-600 hover:underline text-sm"
-            >
-              Open full route on RideWithGPS &rarr;
-            </a>
-          </p>
         </div>
       </section>
 
@@ -424,9 +452,9 @@ export default function Home() {
             Day-by-Day Itinerary
           </h2>
           <p className="fade-section text-gray-500 text-center text-lg mb-12 md:mb-16 max-w-2xl mx-auto">
-            10 riding days + 2 rest days &mdash; real beds and hot showers
-            every night. Nearly all climbing in the first three days; flat
-            Pannonian plains and Danube cycle paths for the rest.
+            10 riding days + 2 rest days &mdash; real beds and hot showers every
+            night. Nearly all climbing in the first three days; flat Pannonian
+            plains and Danube cycle paths for the rest.
           </p>
 
           <div className="timeline-line space-y-6 md:space-y-8">
@@ -597,9 +625,10 @@ export default function Home() {
                   &rarr; Berlin (~4h).
                 </p>
                 <p className="text-gray-400">
-                  Note: Vienna&ndash;Berlin via Passau is disrupted Jun&ndash;Dec
-                  2026 &mdash; route via Munich is reliable year-round. Book via{" "}
-                  <strong>int.bahn.de</strong> or <strong>oebb.at</strong>.
+                  Note: Vienna&ndash;Berlin via Passau is disrupted
+                  Jun&ndash;Dec 2026 &mdash; route via Munich is reliable
+                  year-round. Book via <strong>int.bahn.de</strong> or{" "}
+                  <strong>oebb.at</strong>.
                 </p>
               </div>
             </Accordion>

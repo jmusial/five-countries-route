@@ -5,11 +5,13 @@ import { useState } from "react";
 export function Accordion({
   title,
   children,
+  defaultOpen = false,
 }: {
   title: string;
   children: React.ReactNode;
+  defaultOpen?: boolean;
 }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(defaultOpen);
   return (
     <div className="border border-stone-200 rounded-xl overflow-hidden">
       <button
