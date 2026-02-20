@@ -507,66 +507,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ PRACTICAL INFO ══════ */}
-      <section className="fade-section py-20 md:py-28 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
-            The Practical Stuff
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Bike Setup",
-                emoji: "\uD83D\uDEB2",
-                content:
-                  "Road or gravel bike. The opening section (Days 1\u20133) has ~1,700\u202Fm of climbing across 176\u202Fkm; the remaining 645\u202Fkm are Pannonian plain and Danube cycle paths. 28\u201332\u202Fmm tires are fine from Day 4 onward.",
-              },
-              {
-                title: "Getting There & Back",
-                emoji: "\uD83D\uDE82",
-                content:
-                  "Direct ICE/EC Munich\u2009\u2192\u2009Villach (~4h15m). From Krak\u00F3w: EC to Vienna then Railjet (~9\u00bdh). Return from Bratislava: EC/Railjet to Vienna (~1h) then onward. Bike reservation mandatory on all international trains (~\u20AC10\u201315/leg). Book early \u2014 bike spaces are limited.",
-              },
-              {
-                title: "Weather (Late May)",
-                emoji: "\u2600\uFE0F",
-                content:
-                  "Warm days (20\u201325\u00B0C), cool mornings in the Carinthian hills. Lake Balaton starts warming up. Pack a light rain jacket and arm warmers for the Pohorje descent on Day 3.",
-              },
-              {
-                title: "Budget Estimate",
-                emoji: "\uD83D\uDCB0",
-                content:
-                  "Trains ~\u20AC80\u2013150 return (bike reservation extra). Accommodation ~\u20AC35\u201360/night (cheaper in Hungary and Slovakia). Food ~\u20AC20\u201330/day. Total roughly \u20AC900\u20131,200 per person for the full trip.",
-              },
-              {
-                title: "Money & Currency",
-                emoji: "\uD83D\uDCB3",
-                content:
-                  "EUR throughout except Hungary (HUF). Carry HUF cash for Hungary \u2014 card acceptance on rural cycling routes can be patchy. ATMs available in all town centres along the route.",
-              },
-              {
-                title: "Navigation",
-                emoji: "\uD83D\uDDFA\uFE0F",
-                content:
-                  "TCX route file available for Garmin/Wahoo. Well-signed EuroVelo paths along the Danube and Balaton shore. Good mobile coverage throughout. Offline maps (OsmAnd / Maps.me) recommended for the Pohorje section.",
-              },
-            ].map((card, i) => (
-              <div
-                key={i}
-                className="bg-stone-100 rounded-xl p-6 hover:shadow-md transition-shadow"
-              >
-                <h3 className="text-xl font-bold mb-3">
-                  <span className="mr-2">{card.emoji}</span>
-                  {card.title}
-                </h3>
-                <p className="text-gray-500 leading-relaxed">{card.content}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ══════ CTA ══════ */}
       <section className="relative py-28 md:py-36 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-br from-emerald-900 via-teal-800 to-cyan-900" />
