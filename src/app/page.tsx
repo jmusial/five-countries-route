@@ -550,23 +550,18 @@ export default function Home() {
             (~&euro;10&ndash;15/leg). Book well in advance.
           </p>
           <div className="flex flex-col gap-4">
-            <Accordion title="From / To Berlin (~8–9h each way)">
+            <Accordion title="From / To Berlin (~8–10h each way)">
               <div className="text-gray-600 text-sm leading-relaxed space-y-2 p-2">
                 <p>
                   <strong>Outbound:</strong> ICE Berlin &rarr; Munich (~4h) +
                   direct ICE/EC Munich &rarr; Villach. 1 change in Munich
-                  (30&ndash;45&nbsp;min).
+                  (30&ndash;45&nbsp;min). <strong>Prices from:</strong> 45 EUR
                 </p>
                 <p>
                   <strong>Return:</strong> EC/Railjet Bratislava &rarr; Vienna
                   (~1h) + Railjet Vienna &rarr; Munich (~3h30m) + ICE Munich
-                  &rarr; Berlin (~4h).
-                </p>
-                <p className="text-gray-400">
-                  Note: Vienna&ndash;Berlin via Passau is disrupted
-                  Jun&ndash;Dec 2026 &mdash; route via Munich is reliable
-                  year-round. Book via <strong>int.bahn.de</strong> or{" "}
-                  <strong>oebb.at</strong>.
+                  &rarr; Berlin (~4h) or even direct{" "}
+                  <strong>Prices from:</strong> 66 EUR
                 </p>
               </div>
             </Accordion>
@@ -574,37 +569,36 @@ export default function Home() {
               <div className="text-gray-600 text-sm leading-relaxed space-y-2 p-2">
                 <p>
                   <strong>Outbound:</strong> Direct ICE or EC Munich &rarr;
-                  Villach via Salzburg (~4h15m). Multiple departures daily.
+                  Villach via Salzburg or direct (~4h15m). Multiple departures
+                  daily. <strong>Prices from:</strong> 43 EUR
                 </p>
                 <p>
                   <strong>Return:</strong> EC/Railjet Bratislava &rarr; Vienna
                   (~1h) + direct Railjet Vienna &rarr; Munich (~3h30m).
-                </p>
-                <p className="text-gray-400">
-                  Easiest connection. New 2026 timetable adds ICE services
-                  Munich&ndash;Villach via the Koralmbahn. Book Sparschiene
-                  fares early on <strong>oebb.at</strong>.
+                  <strong>Prices from:</strong> 68 EUR
                 </p>
               </div>
             </Accordion>
-            <Accordion title="From / To Kraków (~9–10h each way)">
+            <Accordion title="From / To Kraków (~7–11h each way)">
               <div className="text-gray-600 text-sm leading-relaxed space-y-2 p-2">
                 <p>
                   <strong>Outbound:</strong> EC Krak&oacute;w &rarr; Vienna
                   (~5h45m) + Railjet Vienna &rarr; Villach (~3h30m). Allow
-                  60&ndash;90&nbsp;min for the Wien Hbf transfer.
+                  60&ndash;90&nbsp;min for the Wien Hbf transfer.{" "}
+                  <strong>Prices from:</strong> 72 EUR
                 </p>
                 <p>
-                  <strong>Return:</strong> EC/Railjet Bratislava &rarr; Vienna
-                  (~1h) + direct EC Vienna &rarr; Krak&oacute;w (~5h45m).
-                </p>
-                <p className="text-gray-400">
-                  3 direct EC Krak&oacute;w&ndash;Vienna daily from 2026. Book
-                  PKP Intercity + &Ouml;BB tickets separately. Bike reservation
-                  mandatory on all legs.
+                  <strong>Return:</strong> PKP EC (Batory) &rarr; Krak&oacute;w
+                  (~7h). <strong>Prices from:</strong> 100PLN
                 </p>
               </div>
             </Accordion>
+            <div className="max-w-5xl mx-auto text-center space-y-4 text-lg">
+              <p>
+                Connections existance and bike spot availability checked maually
+                by a real human (yours truly)
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -612,18 +606,6 @@ export default function Home() {
       {/* ══════ FOOTER ══════ */}
       <footer className="bg-gray-900 text-white/60 py-12 px-6">
         <div className="max-w-5xl mx-auto text-center text-sm space-y-4">
-          <p>
-            Route data on{" "}
-            <a
-              href="https://ridewithgps.com/routes/53945831?privacy_code=I7MD2VPfqaEuqrhEyPue9ZchCgi69Ys7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-400 hover:underline"
-            >
-              RideWithGPS
-            </a>
-            .
-          </p>
           <p className="text-white/30">
             Vibed with excitement for the trip ahead
           </p>
