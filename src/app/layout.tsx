@@ -13,24 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 const OG_IMAGE =
-  "https://d2exd72xrrp1s7.cloudfront.net/www/1e/1egfo8mnlin0knrtbr51tka53v9aq0pc-p175678407-full/17b2ad11817?width=1200&crop=false&q=70";
+  "https://s3.ap-southeast-2.amazonaws.com/eh-media/2021%2F11%2FSlovakia-Bratislava-Cycling_with_Bratislava_Castle_in_the_Background.jpg";
 
 export const metadata: Metadata = {
-  title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
+  title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
   description:
-    "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast. Late May 2026.",
+    "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike. Late May 2026.",
   openGraph: {
-    title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
+    title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
     description:
-      "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast. Late May 2026.",
+      "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike. Late May 2026.",
     type: "website",
-    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Bikepacking through Slovenia" }],
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Cycling with Bratislava Castle in the background" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Let's Go Slovenia! | Ljubljana → Rijeka Bikepacking",
+    title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
     description:
-      "2 weeks, ~550 km, 3 countries. Julian Alps, Soča Valley, Trieste, Parenzana trail, and the Adriatic coast.",
+      "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike.",
     images: [OG_IMAGE],
   },
 };

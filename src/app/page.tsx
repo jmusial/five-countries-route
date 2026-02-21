@@ -34,7 +34,7 @@ const HIGHLIGHTS = [
     desc: "The crux of the whole trip. Day 3 climbs the forested Pohorje ridge to 566\u202Fm \u2014 the highest point on the route \u2014 before a long descent into Maribor. It cannot be routed around, and it doesn\u2019t need to be: the views are worth every metre.",
     color: "from-emerald-700 to-teal-900",
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/1l/1l6cpqjv3grzqq24rg52we8kx3v9adfih-p175675232-full/17b2ac82100?width=3360&crop=false&q=70",
+      "https://bubocup.com/wp-content/uploads/2021/01/F013178-rogla_pohorje_pohodnika_jost_gantar_4-photo-m-1.jpg",
     icon: "\u26F0\uFE0F",
   },
   {
@@ -42,7 +42,7 @@ const HIGHLIGHTS = [
     desc: "Slovenia\u2019s second city is home to the world\u2019s oldest living grapevine \u2014 over 400 years old, Guinness-certified, still producing wine. The Lent riverside quarter, city castle, and excellent Styrian wine make the rest day here an easy sell.",
     color: "from-purple-700 to-grape-900",
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/1p/1pr0jf9czl9vhbowmw3a2zkkd3v9b8dxs-p175685147-full/17b2ade2b0a?width=3360&crop=false&q=70",
+      "https://www.visitmaribor.si/media/4351/odsev-reka-drava-noc-lent_maribor_pohorje_slovenija_slovenia_shutterstock_rudy_balasko.jpg?anchor=center&mode=crop&width=2560",
     icon: "\uD83C\uDF77",
   },
   {
@@ -50,7 +50,7 @@ const HIGHLIGHTS = [
     desc: "Slovenia\u2019s oldest city (hilltop castle above the Drava, Roman foundations) followed immediately by Croatia\u2019s perfectly-preserved Baroque city nicknamed the \u201CCroatian Vienna\u201D. Two unmissable stops in a single day.",
     color: "from-amber-600 to-orange-800",
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/g8/g8nf8qurzche1v25xxubqoeb43v9a0gb4-p175671324-full/17b2abee3c2?width=1680&crop=false&q=80",
+      "https://zamkiobronne.pl/wp-content/uploads/2023/06/ptuj_2022_01.jpg",
     icon: "\uD83C\uDFF0",
   },
   {
@@ -58,7 +58,7 @@ const HIGHLIGHTS = [
     desc: "Europe\u2019s largest warm-water lake \u2014 nearly 80\u202Fkm long. Days 5 and 6 follow the entire southern shore from Balatonszentgy\u00F6rgy to Si\u00F3fok. Flat, fast cycling with the lake always on your left and medieval Keszthely to explore along the way.",
     color: "from-cyan-500 to-blue-700",
     image:
-      "https://cyclingholidayscroatia.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F43309%2FParenzana_high-res_vertical-44.jpg&w=3840&q=75",
+      "https://www.balatonbike.hu/msite/174/5ac9bebd6a4ad231ea4cc47bd9fe365f3.jpg",
     icon: "\uD83C\uDF05",
   },
   {
@@ -66,7 +66,7 @@ const HIGHLIGHTS = [
     desc: "Arrive in Budapest with time for the Chain Bridge and Parliament at dusk. After a rest day of thermal baths and ruin bars, Day 8 follows the Danube Bend north \u2014 one of Central Europe\u2019s most scenic stretches \u2014 to Esztergom\u2019s towering basilica on the Slovak border.",
     color: "from-rose-600 to-red-800",
     image:
-      "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9142.jpg",
+      "https://lh4.googleusercontent.com/proxy/Wf2QFJF4QaJ8NqgDj_EGFSCcv4p9yxV8P91n1bVIVp9nv35C5vMGHkGLHa2SOWJY98auCU8hjrb8d0UO48pWpq0dBdfxQUlcochl1RfFIVJfwzjRFVHPUJPHwxa5cnIMfNyYwK_gG0QvNQ63iwLvOTIPn8bZgdVhA2JBtBDSHjLFaHJd5gwAf_yWBM9ycbf6lp7OdnMfWA",
     icon: "\uD83C\uDFDB\uFE0F",
   },
 ];
@@ -206,35 +206,31 @@ const ITINERARY = [
 const CAROUSEL_IMAGES = [
   {
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/28/2827znoehw4s11h9dhiema1353v9aecob-p175675252-full/17b2ac8c940?width=3360&crop=false&q=70",
+      "https://www.skedaddle.com/uk/uploadedImages/holiday/508/_Holiday.508.24754_full.jpg?22092025084618",
   },
   {
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/1l/1l6cpqjv3grzqq24rg52we8kx3v9adfih-p175675232-full/17b2ac82100?width=3360&crop=false&q=70",
+      "https://www.cycling-holiday.com/sites/default/files/media/image/file/bratislava_bicycle_2.jpg",
   },
   {
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/1p/1pr0jf9czl9vhbowmw3a2zkkd3v9b8dxs-p175685147-full/17b2ade2b0a?width=3360&crop=false&q=70",
+      "https://www.traveller.ee/blog/wp-content/uploads/2018/10/a-couple-with-bikes-sitting-on-a-bench-overlooking-danube-river-embankment-in-budapest-hungary.jpg",
   },
   {
     image:
-      "https://d2exd72xrrp1s7.cloudfront.net/www/g8/g8nf8qurzche1v25xxubqoeb43v9a0gb4-p175671324-full/17b2abee3c2?width=1680&crop=false&q=80",
+      "https://s3.ap-southeast-2.amazonaws.com/eh-media/2021%2F11%2FSlovakia-Bratislava-Cycling_with_Bratislava_Castle_in_the_Background.jpg",
   },
   {
     image:
-      "https://cyclingholidayscroatia.com/_next/image?url=https%3A%2F%2Fcdn.world-discovery.com%2F43309%2FParenzana_high-res_vertical-44.jpg&w=3840&q=75",
+      "https://www.kaernten-radreisen.at/wp-content/uploads/2020/11/13-2811-LR_kw_seenschleife_woerthersee_by_gert_perauer.jpg",
   },
   {
     image:
-      "https://www.thenaturaladventure.com/wp-content/uploads/2022/11/cycling-the-parenzana-trail-2.jpg",
+      "https://www.visitcarinthia.at/fileadmin/_processed_/4/8/csm_Millstaetter_See_Archiv_MTG_c_gert_perauer_9f1aec9f4e.jpg",
   },
   {
     image:
-      "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9142.jpg",
-  },
-  {
-    image:
-      "https://epicroadrides.com/wp-content/uploads/2024/05/EuroVelo-8-cycling-Adriatic-Coast-IMG_9110.jpg",
+      "https://cyclando.com/_next/image?url=https%3A%2F%2Fbecyclando.com%2Fmedia%2F3237%2Fconversions%2Faustria-lago-weissensee-stock-SF0204-hero.webp&w=3840&q=75",
   },
 ];
 
@@ -279,7 +275,9 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[0.95] mb-6">
             Five countries route
             <br />
-            <span className="text-emerald-400">Mountains, lakes and a big ass river</span>
+            <span className="text-emerald-400">
+              Mountains, lakes and a big ass river
+            </span>
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
             Villach to Bratislava &mdash; Carinthian lakes, Slovenia&apos;s
