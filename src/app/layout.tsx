@@ -16,11 +16,11 @@ const OG_IMAGE =
   "https://s3.ap-southeast-2.amazonaws.com/eh-media/2021%2F11%2FSlovakia-Bratislava-Cycling_with_Bratislava_Castle_in_the_Background.jpg";
 
 export const metadata: Metadata = {
-  title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
+  title: "Five Countries Route | Villach → Bratislava Bikepacking",
   description:
     "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike. Late May 2026.",
   openGraph: {
-    title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
+    title: "Five Countries Route | Villach → Bratislava Bikepacking",
     description:
       "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike. Late May 2026.",
     type: "website",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Poor Man's Slovenia | Villach → Bratislava Bikepacking",
+    title: "Five Countries Route | Villach → Bratislava Bikepacking",
     description:
       "821 km across 5 countries in 14 days. Austria, Slovenia, Croatia, Hungary, Slovakia — Villach to Bratislava by bike.",
     images: [OG_IMAGE],

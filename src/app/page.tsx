@@ -366,7 +366,7 @@ export default function Home() {
                   height: "700px",
                   border: "none",
                 }}
-                title="The Poor Man's Slovenia route — full route"
+                title="The 5 countries route — full route"
               />
               <p className="text-center mt-4">
                 <a
@@ -388,7 +388,7 @@ export default function Home() {
                   height: "700px",
                   border: "none",
                 }}
-                title="The Poor Man's Slovenia route — day by day"
+                title="The 5 countries route — day by day"
               />
               <p className="text-center mt-4">
                 <a
